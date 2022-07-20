@@ -438,11 +438,11 @@
             Email.send({
                 Host: "smtp.elasticemail.com",
                 Username: "mohammadawaismeo7@gmail.com",
-                Password: "05B4058011A4CBC51206A17EC58F85E31851",
+                Password: "C191BDC41056916495ABDC01308D61224B1B",
                 To: 'mohammadawaismeo7@gmail.com',
                 From: document.getElementById("email").value ,
-                Subject: "Hire Me Email BY "+document.getElementById("name").value+document.getElementById("subject").value,
-                Body: document.getElementById("message").value
+                Subject: "Hire Me Email BY "+document.getElementById("name").value,
+                Body: "Hire Me Email BY "+document.getElementById("name").value+document.getElementById("subject").value+"<br>"+document.getElementById("message").value
             }).then(
                 message => alert(message)
             );
